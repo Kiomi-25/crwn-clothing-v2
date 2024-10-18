@@ -7,15 +7,16 @@ import Navigation from "./routes/navegation/navegation.component";
 import Authentication from "./routes/authentication/authenticetion.component";
 
 const Shop = () => {
-  return <h1>I am The Shop Page</h1>;
+  return <h1>I am the shop page</h1>;
 };
+
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path="shop" signIn element={<Shop />} />
-        <Route path="auth" signIn element={<Authentication />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
