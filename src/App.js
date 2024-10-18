@@ -6,9 +6,7 @@ import Navigation from "./routes/navegation/navegation.component";
 
 import Authentication from "./routes/authentication/authenticetion.component";
 
-const Shop = () => {
-  return <h1>I am the shop page</h1>;
-};
+import Shop from "./routes/shop/shop.component";
 
 const App = () => {
   return (
